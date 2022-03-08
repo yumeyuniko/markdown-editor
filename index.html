@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+  , initial-scale=1.0"
+    />
+    <title>Markdown Editor</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+    <script src="main.js" type="module"></script>
+  </head>
+
+  <body>
+    <main>
+      <h1 class="title">マークダウンエディター</h1>
+      <div class="container">
+        <div>
+          <div class="col-sm-6 form-group shadow-textarea">
+            <h2 class="h2-title">エディター</h2>
+            <textarea
+              id="editor"
+              class="form-control"
+              placeholder="ここに書き込みます"
+            ></textarea>
+          </div>
+
+          <div class="col-sm-6 html-preview">
+            <h2 class="h2-title">HTMLプレビュー</h2>
+            <div id="preview"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
